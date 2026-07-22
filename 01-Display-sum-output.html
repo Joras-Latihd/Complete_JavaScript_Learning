@@ -1,0 +1,52 @@
+<!--
+    Version 1: Displaying in Console / Page
+    Uses document.write() to show output directly on the page
+    (console.log line is commented out - that one shows in browser console instead)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying in Console</title>
+</head>
+<body>
+    <script>
+        const x = 10;
+        const y = 30;
+        const sum = x + y;
+
+        // console.log(sum);   // Uncomment this + open browser console (F12) to see it there instead
+        document.write(sum);
+    </script>
+</body>
+</html>
+
+
+<!--
+    Version 2: Displaying with Dialog Box
+    Uses alert() to show output in a popup box, triggered by a button click
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying with Dialog Box</title>
+</head>
+<body>
+    <button type="button" id="sumBtn">Sum</button>
+
+    <script>
+        // addEventListener: modern way to attach a click handler in JS instead of inline HTML
+        document.getElementById("sumBtn").addEventListener("click", myFunc);
+
+        function myFunc() {
+            const x = 10;
+            const y = 14;
+            const sum = x + y;
+            alert(sum);
+        }
+    </script>
+</body>
+</html>

@@ -45,7 +45,6 @@ node 01-javascript-functions-reference.js
 | 🌐 Portfolio | [saroj-dhital.com.np](https://saroj-dhital.com.np/) |
 | 💼 LinkedIn | [linkedin.com/in/sarojdhital71](https://www.linkedin.com/in/sarojdhital71/) |
 | 🐙 GitHub | [github.com/Joras-Latihd](https://github.com/Joras-Latihd) |
-| ✉️ Email | sarojdhital71@gmail.com |
 
 ---
 

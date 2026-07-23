@@ -23,7 +23,6 @@ Complete_Javascript_Learning/
 ├── 02-...
 └── README.md
 ```
-
 ---
 
 ## 📗 How to Use

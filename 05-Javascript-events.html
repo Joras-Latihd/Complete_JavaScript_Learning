@@ -84,6 +84,16 @@ like a button too.
       btn4.addEventListener("blur", function () {
         console.log("Button lost focus");
       });
+
+      /*
+Version 6: dblclick Event
+Fires when an element is clicked twice in quick succession.
+*/
+      const btn5 = document.getElementById("btn");
+
+      btn5.addEventListener("dblclick", function () {
+        console.log("Button was double-clicked");
+      });
     </script>
   </body>
 </html>

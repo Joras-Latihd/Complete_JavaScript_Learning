@@ -12,7 +12,7 @@
     runs whenever the button is clicked
     -->
     <button id="btn">Click Me</button>
-
+    <input type="text" id="textInput" />
     <script>
       const btn = document.getElementById("btn");
 
@@ -93,6 +93,18 @@ Fires when an element is clicked twice in quick succession.
 
       btn5.addEventListener("dblclick", function () {
         console.log("Button was double-clicked");
+      });
+
+      /*
+Version 8: input Event
+Fires immediately every time the value of an input field changes
+- e.g. on every keystroke, unlike "change" which waits until the
+field loses focus.
+*/
+      const textInput = document.getElementById("textInput");
+
+      textInput.addEventListener("input", function (event) {
+        console.log("Current value:", event.target.value);
       });
     </script>
   </body>

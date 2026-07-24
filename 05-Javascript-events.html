@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onclick Event</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!--
     Version 1: onclick Event Handler
     Assigns a function to the button's onclick property so it
@@ -15,18 +14,31 @@
     <button id="btn">Click Me</button>
 
     <script>
-        const btn = document.getElementById("btn");
+      const btn = document.getElementById("btn");
 
-        /*
+      /*
         Event Handler
         The block of code assigned to btn.onclick is called an
         "event handler" — it only runs when the click event fires,
         not immediately when the script loads.
         */
-        btn.onclick = function(){
-            alert("The button was clicked and the task is to show this dialog box.");
-        };
-    </script>
+      btn.onclick = function () {
+        alert(
+          "The button was clicked and the task is to show this dialog box.",
+        );
+      };
 
-</body>
+      /*
+Version 2: addEventListener
+A more modern way to attach event handlers. Unlike onclick,
+addEventListener lets you attach multiple handlers to the same
+event without overwriting each other.
+*/
+      const btn2 = document.getElementById("btn");
+
+      btn2.addEventListener("click", function () {
+        alert("The button was clicked using addEventListener.");
+      });
+    </script>
+  </body>
 </html>

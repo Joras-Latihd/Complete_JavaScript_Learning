@@ -39,6 +39,21 @@ event without overwriting each other.
       btn2.addEventListener("click", function () {
         alert("The button was clicked using addEventListener.");
       });
+
+      /*
+Version 3: mouseover / mouseout Events
+Fires when the mouse pointer enters (mouseover) or leaves (mouseout)
+an element — commonly used for hover effects.
+*/
+      const btn3 = document.getElementById("btn");
+
+      btn3.addEventListener("mouseover", function () {
+        btn3.textContent = "Hovering!";
+      });
+
+      btn3.addEventListener("mouseout", function () {
+        btn3.textContent = "Click Me";
+      });
     </script>
   </body>
 </html>

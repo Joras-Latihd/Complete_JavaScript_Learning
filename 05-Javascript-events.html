@@ -68,6 +68,22 @@ gives details about which key was used via event.key.
       document.addEventListener("keyup", function (event) {
         console.log("Key released:", event.key);
       });
+
+      /*
+Version 5: focus / blur Events
+Fires when an element gains focus (focus) or loses it (blur) —
+common for form inputs, but works on any focusable element
+like a button too.
+*/
+      const btn4 = document.getElementById("btn");
+
+      btn4.addEventListener("focus", function () {
+        console.log("Button is focused");
+      });
+
+      btn4.addEventListener("blur", function () {
+        console.log("Button lost focus");
+      });
     </script>
   </body>
 </html>

@@ -54,6 +54,20 @@ an element — commonly used for hover effects.
       btn3.addEventListener("mouseout", function () {
         btn3.textContent = "Click Me";
       });
+
+      /*
+Version 4: keydown / keyup Events
+Fires when a key is pressed down (keydown) or released (keyup)
+while an element (or the document) has focus. The event object
+gives details about which key was used via event.key.
+*/
+      document.addEventListener("keydown", function (event) {
+        console.log("Key pressed:", event.key);
+      });
+
+      document.addEventListener("keyup", function (event) {
+        console.log("Key released:", event.key);
+      });
     </script>
   </body>
 </html>

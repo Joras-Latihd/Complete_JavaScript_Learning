@@ -26,4 +26,29 @@ let count2 = 5;
 console.log("Prefix++:", ++count2);
 console.log("After Prefix++:", count2);
 
+/*
+2. Assignment Operators
+Used to assign values to variables. Compound assignment operators
+combine an arithmetic operation with assignment in one step.
+*/
+let x = 10;
+
+x += 5;
+console.log("Add and Assign (+=):", x);
+
+x -= 3;
+console.log("Subtract and Assign (-=):", x);
+
+x *= 2;
+console.log("Multiply and Assign (*=):", x);
+
+x /= 4;
+console.log("Divide and Assign (/=):", x);
+
+x %= 3;
+console.log("Remainder and Assign (%=):", x);
+
+x **= 2;
+console.log("Exponent and Assign (**=):", x);
+
 

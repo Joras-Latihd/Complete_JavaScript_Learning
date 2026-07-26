@@ -1,6 +1,6 @@
 # 📘 Complete JavaScript Learning - Saroj Dhital
 
-A structured collection of **JavaScript concept notes and practice files**, built step-by-step while learning.
+A structured collection of **JavaScript concept notes and practice files**, built step-by-step.
 
 Each file is a self-contained reference covering one concept area, with beginner-friendly explanations, meant to be revisited anytime as a quick refresher.
 

@@ -51,4 +51,22 @@ console.log("Remainder and Assign (%=):", x);
 x **= 2;
 console.log("Exponent and Assign (**=):", x);
 
+/*
+3. Comparison Operators
+Compare two values and return a boolean (true or false).
+== compares value only, after converting types if needed.
+=== compares both value AND type, with no conversion — always
+prefer === to avoid unexpected type-conversion bugs.
+*/
+let p = 5;
+let q = "5";
+
+console.log("Equal (==):", p == q);
+console.log("Strict Equal (===):", p === q);
+console.log("Not Equal (!=):", p != q);
+console.log("Strict Not Equal (!==):", p !== q);
+console.log("Greater Than (>):", p > 3);
+console.log("Less Than (<):", p < 3);
+console.log("Greater Than or Equal (>=):", p >= 5);
+console.log("Less Than or Equal (<=):", p <= 4);
 

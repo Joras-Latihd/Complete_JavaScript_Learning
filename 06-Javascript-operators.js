@@ -70,3 +70,27 @@ console.log("Less Than (<):", p < 3);
 console.log("Greater Than or Equal (>=):", p >= 5);
 console.log("Less Than or Equal (<=):", p <= 4);
 
+/*
+4. Logical Operators
+Combine or invert boolean expressions.
+&& (AND) is true only if both sides are true.
+|| (OR) is true if at least one side is true.
+! (NOT) flips a boolean's value.
+*/
+let isLoggedIn = true;
+let hasPermission = false;
+
+console.log("AND (&&):", isLoggedIn && hasPermission);
+console.log("OR (||):", isLoggedIn || hasPermission);
+console.log("NOT (!):", !isLoggedIn);
+
+/*
+Short-Circuit Evaluation
+&& returns the first falsy value, or the last value if all are truthy.
+|| returns the first truthy value, or the last value if all are falsy.
+This is often used to set fallback values or run conditional code.
+*/
+let username = "";
+let displayName = username || "Guest";
+console.log("Short-Circuit OR fallback:", displayName);
+

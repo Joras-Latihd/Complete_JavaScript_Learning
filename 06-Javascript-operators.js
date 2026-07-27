@@ -130,3 +130,21 @@ console.log("typeof string:", typeof str);
 console.log("typeof boolean:", typeof bool);
 console.log("typeof array:", typeof arr);
 console.log("instanceof Array:", arr instanceof Array);
+
+
+/*
+7. Bitwise Operators
+Operate on the individual bits of numbers (their binary
+representation). Rarely used in everyday web development, but
+useful to recognize.
+& (AND), | (OR), ^ (XOR), ~ (NOT), << (left shift), >> (right shift)
+*/
+let m = 5;   // binary: 0101
+let n = 3;   // binary: 0011
+
+console.log("Bitwise AND (&):", m & n);
+console.log("Bitwise OR (|):", m | n);
+console.log("Bitwise XOR (^):", m ^ n);
+console.log("Bitwise NOT (~):", ~m);
+console.log("Left Shift (<<):", m << 1);
+console.log("Right Shift (>>):", m >> 1);

@@ -94,3 +94,20 @@ let username = "";
 let displayName = username || "Guest";
 console.log("Short-Circuit OR fallback:", displayName);
 
+/*
+5. Ternary Operator
+A shorthand for a simple if-else statement, written in one line:
+condition ? valueIfTrue : valueIfFalse
+*/
+let age = 18;
+let canVote = age >= 18 ? "Yes, can vote" : "No, cannot vote";
+console.log("Ternary:", canVote);
+
+/*
+Chained Ternary
+Multiple conditions can be checked in sequence, though this should
+be used sparingly - too many chained ternaries hurt readability.
+*/
+let score = 75;
+let grade = score >= 90 ? "A" : score >= 75 ? "B" : score >= 50 ? "C" : "F";
+console.log("Chained Ternary:", grade);

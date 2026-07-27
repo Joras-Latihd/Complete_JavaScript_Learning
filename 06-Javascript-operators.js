@@ -111,3 +111,22 @@ be used sparingly - too many chained ternaries hurt readability.
 let score = 75;
 let grade = score >= 90 ? "A" : score >= 75 ? "B" : score >= 50 ? "C" : "F";
 console.log("Chained Ternary:", grade);
+
+
+/*
+6. Type Operators
+typeof returns a string naming the data type of a value.
+instanceof checks whether an object is an instance of a specific
+class or constructor (covered in more detail once objects/classes
+are introduced).
+*/
+let num = 42;
+let str = "hello";
+let bool = true;
+let arr = [1, 2, 3];
+
+console.log("typeof number:", typeof num);
+console.log("typeof string:", typeof str);
+console.log("typeof boolean:", typeof bool);
+console.log("typeof array:", typeof arr);
+console.log("instanceof Array:", arr instanceof Array);

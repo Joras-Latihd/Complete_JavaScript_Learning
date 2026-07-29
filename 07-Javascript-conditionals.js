@@ -62,3 +62,22 @@ Stops the switch from checking further cases once a match is found.
 Without break, execution "falls through" into the next case even
 if it doesn't match - usually not what you want.
 */
+
+
+/*
+3. Nested if Statements
+An if statement placed inside another if block, used when a
+decision depends on more than one condition being checked in stages.
+*/
+let age = 20;
+let hasID = true;
+
+if (age >= 18) {
+    if (hasID) {
+        console.log("Entry allowed");
+    } else {
+        console.log("ID required for entry");
+    }
+} else {
+    console.log("Must be 18 or older");
+}

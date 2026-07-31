@@ -49,3 +49,20 @@ const fruits = ["apple", "banana", "mango"];
 for (const fruit of fruits) {
     console.log("for...of Loop:", fruit);
 }
+
+
+/*
+5. for...in Loop
+Loops over the KEYS (property names) of an object - or the
+INDEXES of an array. Mainly used for objects; for...of is
+generally preferred for arrays since it gives values directly.
+*/
+const user = {
+    name: "Saroj",
+    age: 21,
+    role: "Student"
+};
+
+for (const key in user) {
+    console.log("for...in Loop:", key, "-", user[key]);
+}

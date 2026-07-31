@@ -36,3 +36,16 @@ do {
     console.log("do-while Loop:", j);
     j++;
 } while (j <= 5);
+
+
+/*
+4. for...of Loop
+Loops directly over the VALUES of an iterable - arrays, strings,
+maps, sets, etc. Simpler than a regular for loop when you don't
+need the index, just the items themselves.
+*/
+const fruits = ["apple", "banana", "mango"];
+
+for (const fruit of fruits) {
+    console.log("for...of Loop:", fruit);
+}

@@ -66,3 +66,24 @@ const user = {
 for (const key in user) {
     console.log("for...in Loop:", key, "-", user[key]);
 }
+
+
+/*
+6. break / continue
+break stops the loop entirely and exits it immediately.
+continue skips just the current iteration and moves to the next one,
+without exiting the whole loop.
+*/
+for (let k = 1; k <= 10; k++) {
+    if (k === 5) {
+        break;
+    }
+    console.log("break example:", k);
+}
+
+for (let m = 1; m <= 10; m++) {
+    if (m % 2 === 0) {
+        continue;
+    }
+    console.log("continue example (odd numbers only):", m);
+}

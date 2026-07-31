@@ -22,3 +22,17 @@ while (i <= 5) {
     console.log("while Loop:", i);
     i++;
 }
+
+
+/*
+3. do-while Loop
+Similar to while, but the code block runs once BEFORE the condition
+is checked - so it always executes at least once, even if the
+condition is false from the start.
+*/
+let j = 1;
+
+do {
+    console.log("do-while Loop:", j);
+    j++;
+} while (j <= 5);

@@ -49,3 +49,22 @@ console.log("After unshift:", queue);
 const firstRemoved = queue.shift();
 console.log("After shift:", queue);
 console.log("Removed item:", firstRemoved);
+
+
+/*
+4. slice / splice
+slice(start, end) returns a NEW array containing a portion of the
+original, WITHOUT modifying it. The "end" index is not included.
+
+splice(start, deleteCount, ...items) MODIFIES the original array
+directly - it can remove items, insert items, or both at once.
+*/
+const letters = ["a", "b", "c", "d", "e"];
+
+const sliced = letters.slice(1, 3);
+console.log("slice result:", sliced);
+console.log("Original after slice (unchanged):", letters);
+
+const spliceRemoved = letters.splice(1, 2, "x", "y");
+console.log("Original after splice:", letters);
+console.log("Removed by splice:", spliceRemoved);

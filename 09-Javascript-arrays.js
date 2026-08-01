@@ -68,3 +68,18 @@ console.log("Original after slice (unchanged):", letters);
 const spliceRemoved = letters.splice(1, 2, "x", "y");
 console.log("Original after splice:", letters);
 console.log("Removed by splice:", spliceRemoved);
+
+
+/*
+5. indexOf / includes
+indexOf() returns the FIRST index where a value is found, or -1
+if it doesn't exist. includes() returns a simple true/false instead
+- use includes() when you only need to know IF something exists,
+not WHERE.
+*/
+const animals = ["cat", "dog", "rabbit", "dog"];
+
+console.log("indexOf 'dog':", animals.indexOf("dog"));
+console.log("indexOf 'fox' (not found):", animals.indexOf("fox"));
+console.log("includes 'rabbit':", animals.includes("rabbit"));
+console.log("includes 'fox':", animals.includes("fox"));

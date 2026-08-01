@@ -16,3 +16,19 @@ A specific element can be reassigned directly using its index.
 */
 colors[1] = "yellow";
 console.log("After modifying index 1:", colors);
+
+
+/*
+2. push / pop
+push() adds a new item to the END of an array and returns the
+new length. pop() removes the LAST item and returns that removed
+item. Both modify the original array directly.
+*/
+const numbers = [1, 2, 3];
+
+numbers.push(4);
+console.log("After push:", numbers);
+
+const removed = numbers.pop();
+console.log("After pop:", numbers);
+console.log("Removed item:", removed);

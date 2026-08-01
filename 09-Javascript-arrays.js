@@ -32,3 +32,20 @@ console.log("After push:", numbers);
 const removed = numbers.pop();
 console.log("After pop:", numbers);
 console.log("Removed item:", removed);
+
+
+/*
+3. shift / unshift
+shift() removes the FIRST item from an array and returns it.
+unshift() adds a new item to the BEGINNING of an array and returns
+the new length. Both are slower than push/pop on large arrays,
+since every other item has to shift position.
+*/
+const queue = ["b", "c", "d"];
+
+queue.unshift("a");
+console.log("After unshift:", queue);
+
+const firstRemoved = queue.shift();
+console.log("After shift:", queue);
+console.log("Removed item:", firstRemoved);

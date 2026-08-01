@@ -83,3 +83,23 @@ console.log("indexOf 'dog':", animals.indexOf("dog"));
 console.log("indexOf 'fox' (not found):", animals.indexOf("fox"));
 console.log("includes 'rabbit':", animals.includes("rabbit"));
 console.log("includes 'fox':", animals.includes("fox"));
+
+
+/*
+6. map
+Creates a NEW array by running a function on every item of the
+original array, without modifying the original. Commonly used to
+transform each item into something new (e.g. doubling numbers,
+extracting a property from objects).
+*/
+const nums = [1, 2, 3, 4];
+
+const doubled = nums.map(function(num){
+    return num * 2;
+});
+console.log("map result:", doubled);
+console.log("Original unchanged:", nums);
+
+// map with arrow function shorthand
+const squared = nums.map(num => num ** 2);
+console.log("map with arrow shorthand:", squared);

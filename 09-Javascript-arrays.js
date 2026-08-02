@@ -176,3 +176,26 @@ console.log("find result:", firstAdult);
 
 const firstAdultIndex = users.findIndex(user => user.age >= 18);
 console.log("findIndex result:", firstAdultIndex);
+
+
+/*
+11. sort
+Sorts the array IN PLACE (modifies the original) and also returns
+it. By default, sort() converts items to strings and sorts
+alphabetically - which gives WRONG results for numbers (e.g. 10
+comes before 2). For numbers, always pass a compare function.
+*/
+const words = ["banana", "apple", "cherry"];
+words.sort();
+console.log("sort (strings):", words);
+
+const scores = [40, 5, 100, 25];
+scores.sort();
+console.log("sort without compare fn (wrong for numbers):", scores);
+
+// Correct numeric sort using a compare function
+scores.sort((a, b) => a - b);
+console.log("sort ascending (correct):", scores);
+
+scores.sort((a, b) => b - a);
+console.log("sort descending:", scores);

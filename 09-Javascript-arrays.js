@@ -141,3 +141,17 @@ console.log("reduce result (sum):", total);
 // reduce with arrow function shorthand, finding the maximum value
 const highest = prices.reduce((max, current) => current > max ? current : max);
 console.log("reduce result (max):", highest);
+
+
+/*
+9. forEach
+Runs a function once for every item in an array. Unlike map, it
+does NOT return a new array — it's used purely for side effects
+(like logging or updating something outside the array), not for
+transforming data.
+*/
+const cities = ["Kathmandu", "Pokhara", "Biratnagar"];
+
+cities.forEach(function(city, index){
+    console.log("forEach:", index, "-", city);
+});

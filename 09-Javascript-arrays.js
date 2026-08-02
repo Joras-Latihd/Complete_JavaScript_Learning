@@ -122,3 +122,22 @@ console.log("Original unchanged:", ages);
 // filter with arrow function shorthand
 const minors = ages.filter(age => age < 18);
 console.log("filter with arrow shorthand (under 18):", minors);
+
+
+/*
+8. reduce
+Reduces an entire array down to a SINGLE value by running a function
+that accumulates a result as it moves through each item.
+reduce(callback, initialValue) - the callback receives the running
+total (accumulator) and the current item on each pass.
+*/
+const prices = [10, 20, 30, 40];
+
+const total = prices.reduce(function(accumulator, current){
+    return accumulator + current;
+}, 0);
+console.log("reduce result (sum):", total);
+
+// reduce with arrow function shorthand, finding the maximum value
+const highest = prices.reduce((max, current) => current > max ? current : max);
+console.log("reduce result (max):", highest);

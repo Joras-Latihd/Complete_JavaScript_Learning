@@ -103,3 +103,22 @@ console.log("Original unchanged:", nums);
 // map with arrow function shorthand
 const squared = nums.map(num => num ** 2);
 console.log("map with arrow shorthand:", squared);
+
+
+/*
+7. filter
+Creates a NEW array containing only the items that pass a test
+(a function that returns true/false). Items that return false are
+left out. The original array is not modified.
+*/
+const ages = [12, 18, 25, 15, 30, 8];
+
+const adults = ages.filter(function(age){
+    return age >= 18;
+});
+console.log("filter result (18+):", adults);
+console.log("Original unchanged:", ages);
+
+// filter with arrow function shorthand
+const minors = ages.filter(age => age < 18);
+console.log("filter with arrow shorthand (under 18):", minors);

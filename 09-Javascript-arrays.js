@@ -155,3 +155,24 @@ const cities = ["Kathmandu", "Pokhara", "Biratnagar"];
 cities.forEach(function(city, index){
     console.log("forEach:", index, "-", city);
 });
+
+
+/*
+10. find / findIndex
+find() returns the FIRST item that passes a test function, or
+undefined if none match. findIndex() works the same way but
+returns the INDEX of that item instead (or -1 if none match).
+*/
+const users = [
+    { name: "Sam", age: 17 },
+    { name: "Alex", age: 22 },
+    { name: "Jo", age: 30 }
+];
+
+const firstAdult = users.find(function(user){
+    return user.age >= 18;
+});
+console.log("find result:", firstAdult);
+
+const firstAdultIndex = users.findIndex(user => user.age >= 18);
+console.log("findIndex result:", firstAdultIndex);

@@ -19,6 +19,7 @@ console.log("Bracket notation with variable key:", person[key]);
 
 
 
+
 /*
 2. Adding / Updating / Deleting Properties
 Objects are mutable - properties can be added or changed anytime

@@ -111,3 +111,26 @@ console.log("Object.entries:", Object.entries(book));
 for (const [key, value] of Object.entries(book)) {
     console.log(key + ":", value);
 }
+
+
+
+
+/*
+5. Nested Objects
+Objects can contain other objects as property values, letting you
+model more complex, real-world data. Access nested values by
+chaining dot notation deeper, level by level.
+*/
+const company = {
+    name: "TechCorp",
+    address: {
+        city: "Kathmandu",
+        country: "Nepal"
+    },
+    employee: {
+        name: "Saroj",
+        role: "Frontend Developer"
+    }
+};
+
+console.log("Nested access:",

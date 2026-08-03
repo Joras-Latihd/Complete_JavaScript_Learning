@@ -92,3 +92,10 @@ const book = {
 };
 
 console.log("Object.keys:", Object.keys(book));
+
+/*
+Object.values
+Returns an array containing only the VALUES of an object's
+properties, in the same order as Object.keys.
+*/
+console.log("Object.values:", Object.values(book));

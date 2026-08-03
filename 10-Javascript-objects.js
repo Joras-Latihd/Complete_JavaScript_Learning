@@ -42,3 +42,37 @@ console.log("After updating model:", car);
 // Deleting a property
 delete car.year;
 console.log("After deleting year:", car);
+
+
+
+
+/*
+3. Object Methods & this
+A method is a function stored as an object's property. Inside a
+regular (non-arrow) method, "this" refers to the object the method
+was called on - letting the method access that object's own data.
+*/
+const student = {
+    name: "Alex",
+    marks: 85,
+    getSummary: function(){
+        return this.name + " scored " + this.marks;
+    }
+};
+
+console.log("Method result:", student.getSummary());
+
+
+/*
+Arrow Functions and this
+Arrow functions do NOT have their own "this" - they inherit it from
+the surrounding scope. This means arrow functions usually don't
+work as expected when used as object methods.
+*/
+const brokenExample = {
+    name: "Sam",
+    getName: () => {
+        return this.name;
+    }
+};
+console.log("Arrow method (this is undefined here):", brokenExample.getName());

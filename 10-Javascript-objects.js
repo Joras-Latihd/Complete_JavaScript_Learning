@@ -62,7 +62,6 @@ const student = {
 
 console.log("Method result:", student.getSummary());
 
-
 /*
 Arrow Functions and this
 Arrow functions do NOT have their own "this" - they inherit it from

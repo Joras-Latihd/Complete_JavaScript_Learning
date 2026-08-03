@@ -99,3 +99,15 @@ Returns an array containing only the VALUES of an object's
 properties, in the same order as Object.keys.
 */
 console.log("Object.values:", Object.values(book));
+
+/*
+Object.entries
+Returns an array of [key, value] pairs - combining what keys()
+and values() give separately. Commonly paired with for...of and
+array destructuring to loop through both at once.
+*/
+console.log("Object.entries:", Object.entries(book));
+
+for (const [key, value] of Object.entries(book)) {
+    console.log(key + ":", value);
+}

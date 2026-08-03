@@ -133,4 +133,4 @@ const company = {
     }
 };
 
-console.log("Nested access:",
+console.log("Nested access:",)

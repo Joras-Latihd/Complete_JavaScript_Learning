@@ -75,3 +75,20 @@ const brokenExample = {
     }
 };
 console.log("Arrow method (this is undefined here):", brokenExample.getName());
+
+
+
+
+/*
+4. Object.keys
+Returns an array containing only the PROPERTY NAMES (keys) of an
+object. Useful since objects themselves can't be looped over
+directly with array methods.
+*/
+const book = {
+    title: "1984",
+    author: "George Orwell",
+    year: 1949
+};
+
+console.log("Object.keys:", Object.keys(book));

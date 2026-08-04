@@ -183,3 +183,7 @@ const baseSettings = {
     theme: "dark",
     notifications: true
 };
+
+// Cloning an object
+const clonedSettings = { ...baseSettings };
+console.log("Cloned object:", clonedSettings);

@@ -153,3 +153,12 @@ const profile = {
 const { username, followers } = profile;
 console.log("Destructured username:", username);
 console.log("Destructured followers:", followers);
+
+
+/*
+Renaming while Destructuring
+A property can be extracted into a variable with a DIFFERENT name
+using the colon syntax - useful to avoid naming conflicts.
+*/
+const { username: handle } = profile;
+console.log("Renamed destructure:", handle);

@@ -208,3 +208,9 @@ const account = {
         theme: "dark"
     }
 };
+
+// Safe access - property exists
+console.log("Optional chaining (exists):", account.settings?.theme);
+
+// Safe access - property does NOT exist, returns undefined instead of crashing
+console.log("Optional chaining (missing):", account.profile?.bio);

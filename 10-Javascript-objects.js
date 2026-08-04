@@ -214,3 +214,11 @@ console.log("Optional chaining (exists):", account.settings?.theme);
 
 // Safe access - property does NOT exist, returns undefined instead of crashing
 console.log("Optional chaining (missing):", account.profile?.bio);
+
+/*
+Combining with Default Values
+Optional chaining pairs well with the || or ?? operator to provide
+a fallback when a nested property is missing.
+*/
+const bio = account.profile?.bio ?? "No bio available";
+console.log("Optional chaining with fallback:", bio);

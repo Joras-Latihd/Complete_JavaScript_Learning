@@ -187,3 +187,8 @@ const baseSettings = {
 // Cloning an object
 const clonedSettings = { ...baseSettings };
 console.log("Cloned object:", clonedSettings);
+
+// Merging and overriding properties
+const updatedSettings = { ...baseSettings, theme: "light", fontSize: 14 };
+console.log("Merged/overridden object:", updatedSettings);
+console.log("Original unchanged:", baseSettings);

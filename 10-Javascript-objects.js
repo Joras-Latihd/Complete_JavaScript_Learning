@@ -134,3 +134,22 @@ const company = {
 };
 
 console.log("Nested access:",)
+
+
+
+
+/*
+6. Object Destructuring
+A shorthand way to pull specific properties out of an object into
+their own variables, instead of accessing them one by one with
+dot notation.
+*/
+const profile = {
+    username: "saroj_dev",
+    followers: 120,
+    verified: false
+};
+
+const { username, followers } = profile;
+console.log("Destructured username:", username);
+console.log("Destructured followers:", followers);

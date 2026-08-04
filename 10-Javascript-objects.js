@@ -162,3 +162,12 @@ using the colon syntax - useful to avoid naming conflicts.
 */
 const { username: handle } = profile;
 console.log("Renamed destructure:", handle);
+
+
+/*
+Default Values while Destructuring
+If a property doesn't exist on the object, a default value can be
+provided instead of getting undefined.
+*/
+const { location = "Unknown" } = profile;
+console.log("Default value destructure:", location);

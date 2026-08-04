@@ -169,3 +169,17 @@ provided instead of getting undefined.
 */
 const { location = "Unknown" } = profile;
 console.log("Default value destructure:", location);
+
+
+
+
+/*
+7. Spread Operator with Objects
+The ...spread syntax copies all properties from one object into
+a new one. Commonly used to clone an object, or to merge/override
+properties without mutating the original.
+*/
+const baseSettings = {
+    theme: "dark",
+    notifications: true
+};

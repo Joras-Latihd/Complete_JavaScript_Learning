@@ -192,3 +192,19 @@ console.log("Cloned object:", clonedSettings);
 const updatedSettings = { ...baseSettings, theme: "light", fontSize: 14 };
 console.log("Merged/overridden object:", updatedSettings);
 console.log("Original unchanged:", baseSettings);
+
+
+
+
+/*
+8. Optional Chaining (?.)
+Safely accesses a nested property WITHOUT throwing an error if a
+property along the way doesn't exist. Without it, trying to access
+a property on undefined/null crashes the program.
+*/
+const account = {
+    username: "saroj_dev",
+    settings: {
+        theme: "dark"
+    }
+};
